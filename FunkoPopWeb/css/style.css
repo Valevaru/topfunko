@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe6e6;
+  padding: 10px 30px;
+  border-bottom: 2px solid #ddd;
+}
+
+.header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #555;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-list {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #888;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #f292b5;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8em;
+  color: #f292b5;
+}
+
+/* Main Sections */
+.catch {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff0f5;
+  font-size: 1.4em;
+}
+
+.categories {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.row1, .row2, .row3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 10%;
+}
+
+/* Products */
+#button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border: none;
+  border-radius: 8px;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#button:hover {
+  background-color: #f7caca;
+}
+
+/* Footer */
+footer {
+  background-color: #fef1f1;
+  color: #444;
+  padding: 30px 10%;
+  border-top: 2px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+footer div {
+  margin-bottom: 20px;
+}
+
+.contact-info,
+.schedule,
+.social {
+  flex: 1 1 30%;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row1, .row2, .row3 {
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social {
+    align-items: center;
+  }
+}
